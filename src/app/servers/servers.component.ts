@@ -9,23 +9,15 @@ export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = "No New Servers Created"; 
 serverId =0;
+serverCreated=false;
+servers=[0,12];
   constructor() {
-   }
-
-   onAllowNewServer()
-   {
-    if(this.serverId =0)
-    {
-      this.allowNewServer=false;
-    }
-    else 
-    {
-      this.allowNewServer=true;
-    }
    }
    onCreateServer()
    {
+     this.servers.push(this.serverId);
      this.serverCreationStatus="New Server Created with ID : "+this.serverId;
+     this.serverId=0;
    }
    onUpdateServerId(event:any)
    {
