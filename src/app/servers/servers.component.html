@@ -1,2 +1,12 @@
-<app-server></app-server>
-<app-server></app-server>
+<div class = "container">
+  <div class ="row">
+    <div class= "col-xs-4" style ="text-align:right">
+        <button class="btn btn-primary" 
+        [disabled] ="!allowNewServer">Add Server</button>
+    </div>
+    <div class = "col-xs-8">
+        <app-server></app-server>
+        <app-server></app-server>
+    </div>
+  </div>
+</div>
