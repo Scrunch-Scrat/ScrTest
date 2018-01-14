@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "scr-test"
+    "name": "n5-complete-guide"
   },
   "apps": [
     {
@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "styles.css"    
+        "styles.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
